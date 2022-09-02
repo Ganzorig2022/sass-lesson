@@ -1,0 +1,72 @@
+@import './button';
+
+body {
+  padding: 0;
+  background-color: $primary-color;
+  // font-family: $font-stack;
+  color: $secondary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0;
+}
+
+// =========PARTIALS
+// 1 sass dotor oor sass file import-lodog boldog.
+// _button.scss gej dooguur zuraastai hadgalna.
+// asd
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  h3 {
+    color: $third-color;
+    font-weight: 300;
+    border-bottom: 2px solid $third-color;
+  }
+  p {
+    color: $third-color;
+    font-size: 1.5rem;
+    border-bottom: 1px solid $secondary-color;
+    padding: 0;
+  }
+  button:active {
+    transform: scaleX(1.1);
+  }
+  button {
+    @include padding(10px);
+    @include margin-top(10px);
+    @include button;
+  }
+}
+
+// sass --watch src/style.scss src/style.css
+// npm run sass
+// package.json dr -> "sass" : "sass --watch src/style.scss src/style.css"
+
+//=========OBJECT - LOOP========
+
+$colors: (
+  b200: #0084f8,
+  d400: #001b36,
+  w100: #ffffff,
+  b100: #58c2f1,
+  r100: #ff8576,
+  g100: #47c2b1,
+  d100: #f0f5f9,
+  d200: #c9d6df,
+  d300: #52616b,
+);
+
+@each $key, $color in $colors {
+  .box-#{$key} {
+    background-color: $color;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    color: transparent;
+  }
+}

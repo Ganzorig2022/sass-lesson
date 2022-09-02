@@ -1,0 +1,146 @@
+.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: blue;
+  border: 1.5px solid blue;
+}
+
+.btn-disabled {
+  background-color: #ccc;
+}
+
+.btn-success {
+  background-color: rgb(0, 255, 115);
+}
+
+.btn-delete {
+  color: white;
+  background-color: crimson;
+}
+
+.btn-circle {
+  border-radius: 10px;
+}
+
+body {
+  padding: 0;
+  background-color: white;
+  color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+main h3 {
+  color: black;
+  font-weight: 300;
+  border-bottom: 2px solid black;
+}
+main p {
+  color: black;
+  font-size: 1.5rem;
+  border-bottom: 1px solid blue;
+  padding: 0;
+}
+main button:active {
+  transform: scaleX(1.1);
+}
+main button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+}
+
+.box-b200 {
+  background-color: #0084f8;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  color: transparent;
+}
+
+.box-d400 {
+  background-color: #001b36;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  color: transparent;
+}
+
+.box-w100 {
+  background-color: #ffffff;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  color: transparent;
+}
+
+.box-b100 {
+  background-color: #58c2f1;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  color: transparent;
+}
+
+.box-r100 {
+  background-color: #ff8576;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  color: transparent;
+}
+
+.box-g100 {
+  background-color: #47c2b1;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  color: transparent;
+}
+
+.box-d100 {
+  background-color: #f0f5f9;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  color: transparent;
+}
+
+.box-d200 {
+  background-color: #c9d6df;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  color: transparent;
+}
+
+.box-d300 {
+  background-color: #52616b;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  color: transparent;
+}
+
+/*# sourceMappingURL=style.css.map */

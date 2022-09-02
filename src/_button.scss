@@ -1,0 +1,55 @@
+$primary-color: white;
+$secondary-color: blue;
+$third-color: black;
+$bg-1: blue;
+$bg-2: white;
+$bg-3: #ccc;
+$bg-4: rgb(0, 255, 115);
+$bg-5: crimson;
+$border: 1.5px solid $bg-1;
+$border-radius: 10px;
+
+// function
+@mixin padding($padding) {
+  padding: $padding;
+}
+@mixin margin-top($padding) {
+  margin-top: $padding;
+}
+
+@mixin button() {
+  border: none;
+}
+
+.btn-primary {
+  background-color: $bg-1;
+  color: $primary-color;
+}
+.btn-secondary {
+  background-color: $bg-2;
+  color: $secondary-color;
+  border: $border;
+}
+.btn-disabled {
+  background-color: $bg-3;
+}
+.btn-success {
+  background-color: $bg-4;
+}
+.btn-delete {
+  color: $primary-color;
+  background-color: $bg-5;
+}
+
+// if statement with function
+@mixin borderRadius($size, $circle: false) {
+  @if ($circle) {
+    border-radius: $size/2;
+  }
+}
+.btn-square {
+  @include borderRadius(10px, $circle: false);
+}
+.btn-circle {
+  @include borderRadius(20px, $circle: true);
+}
